@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox CSS</title>
+        <style>
+            .flex-container {
+                display: flex;
+                 /* flex-direction: column; */
+                /* flex-wrap: wrap; */
+                /* flex-flow: row wrap; */
+                /* justify-content:flex-start */
+                /* align-items:center */
+                /* align-content:flex-end;
+                height:600px; */
+                
+            }
+            
+            .main {
+                background-color: #995DB5;
+                border: 3px solid #272727;
+                border-radius: 10px;
+            }
+
+            .single-item {
+                width: 15%;
+                background-color: #f7941f;
+                border: 3px solid #272727;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 2em;
+                padding: 20px;
+                margin: 10px;
+            }
+
+            .item-1 {
+                min-height: 50px;
+                /* order: 3; */
+    
+            }
+
+            .item-2 {
+                min-height: 100px;
+                /* order: 1; */
+                /* flex-grow: 5; */
+                /* align-self: stretch; */
+            }
+
+            .item-3 {
+                min-height: 150px;
+                /* order: 4 */
+                /* flex-shrink: 7 */
+                /* flex-basis: 200px */
+            }
+
+            .item-4 {
+                min-height: 200px;
+                /* order: 2 */
+                /* flex: 5 9 600px */
+            }
+
+        </style>
+
+    </head>
+<body>
+    <div class="main">
+        <div class="flex-container">
+            <div class="single-item item-1">Box 1</div>
+            <div class="single-item item-2">Box 2</div>
+            <div class="single-item item-3">Box 3</div>
+            <div class="single-item item-4">Box 4</div>
+        </div>
+    </div>
+</body>
+</html>
